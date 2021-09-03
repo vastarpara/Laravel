@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "596b8dc8-9025-48a3-a99e-4524ca33b6d0",
+		"name": "rest_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addPost",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "author_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://demorestapp.local/api/v1/addPost",
+					"protocol": "http",
+					"host": [
+						"demorestapp",
+						"local"
+					],
+					"path": [
+						"api",
+						"v1",
+						"addPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addSubscription",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "2",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://demorestapp.local/api/v1/addSubscription",
+					"protocol": "http",
+					"host": [
+						"demorestapp",
+						"local"
+					],
+					"path": [
+						"api",
+						"v1",
+						"addSubscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeSubscription",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://demorestapp.local/api/v1/removeSubscription",
+					"protocol": "http",
+					"host": [
+						"demorestapp",
+						"local"
+					],
+					"path": [
+						"api",
+						"v1",
+						"removeSubscription"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
